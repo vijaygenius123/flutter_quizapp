@@ -17,8 +17,13 @@ class MyApp extends StatelessWidget {
         title: const Text('Flutter Quiz App'),
       ),
       body: const Center(
-        child: Counter(),
+        child: Icon(Icons.cake),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
+      drawer: Drawer(),
     ));
   }
 }
