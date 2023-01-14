@@ -16,7 +16,13 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Quiz App'),
       ),
-      body: const Center(
+      body: Container(
+        alignment: Alignment.topLeft,
+        padding: EdgeInsets.all(64),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [Colors.amber.shade100, Colors.amber.shade400]),
+        ),
         child: Icon(Icons.cake),
       ),
       floatingActionButton: FloatingActionButton(
