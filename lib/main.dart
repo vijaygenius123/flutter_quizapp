@@ -23,7 +23,15 @@ class MyApp extends StatelessWidget {
           gradient: LinearGradient(
               colors: [Colors.amber.shade100, Colors.amber.shade400]),
         ),
-        child: Icon(Icons.cake),
+        child: GestureDetector(
+          onTap: () => print('Tapped'),
+          child: Container(
+            width: 100,
+            height: 100,
+            alignment: Alignment.center,
+            color: Colors.red,
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
