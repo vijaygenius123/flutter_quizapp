@@ -17,22 +17,22 @@ class MyApp extends StatelessWidget {
         title: const Text('Flutter Quiz App'),
       ),
       body: Container(
-        alignment: Alignment.topLeft,
-        padding: EdgeInsets.all(64),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Colors.amber.shade100, Colors.amber.shade400]),
-        ),
-        child: GestureDetector(
-          onTap: () => print('Tapped'),
-          child: Container(
-            width: 100,
-            height: 100,
-            alignment: Alignment.center,
-            color: Colors.red,
+          alignment: Alignment.topLeft,
+          padding: EdgeInsets.all(64),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [Colors.amber.shade100, Colors.amber.shade400]),
           ),
-        ),
-      ),
+          child: Material(
+              color: Colors.red,
+              child: InkWell(
+                onTap: () => print('Tapped'),
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  alignment: Alignment.center,
+                ),
+              ))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Icon(Icons.add),
